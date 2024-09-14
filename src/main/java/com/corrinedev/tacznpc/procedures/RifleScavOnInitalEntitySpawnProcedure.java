@@ -6,11 +6,14 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 
 import com.corrinedev.tacznpc.entity.USECScavRifleEntity;
+import com.corrinedev.tacznpc.configuration.TaczNpcConfigConfiguration;
 
 public class RifleScavOnInitalEntitySpawnProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
+		if (entity instanceof LivingEntity _entity)
+			_entity.setHealth((float) (double) TaczNpcConfigConfiguration.USECRIFLEHEALTH.get());
 		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 			if (entity instanceof USECScavRifleEntity animatable)
 				animatable.setTexture("scavusecpistolarmor");

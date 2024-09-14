@@ -6,11 +6,14 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 
 import com.corrinedev.tacznpc.entity.TerroristScavRifleEntity;
+import com.corrinedev.tacznpc.configuration.TaczNpcConfigConfiguration;
 
 public class TerroristRifleScavSpawnProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
+		if (entity instanceof LivingEntity _entity)
+			_entity.setHealth((float) (double) TaczNpcConfigConfiguration.BANDITRIFLEHEALTH.get());
 		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 			if (entity instanceof TerroristScavRifleEntity animatable)
 				animatable.setTexture("terroristarmor");
