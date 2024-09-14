@@ -1,0 +1,675 @@
+{
+  "mod_elements": [
+    {
+      "name": "USECScavOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usec_scav_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/USECScavOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ScavStayAway",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scav_stay_away",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/ScavStayAwayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "USECScav",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "usec_scav_pistol",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/entity/model/USECScavModel.java",
+          "src/main/java/com/corrinedev/tacznpc/entity/USECScavEntity.java",
+          "src/main/resources/data/tacz_npc/forge/biome_modifier/usec_scav_pistol_biome_modifier.json",
+          "src/main/java/com/corrinedev/tacznpc/client/renderer/USECScavRenderer.java",
+          "src/main/resources/assets/tacz_npc/models/item/usec_scav_pistol_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ScavBullet",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "scav_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/entity/ScavBulletEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "AmmoTracker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammo_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/AmmoTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HasAmmo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_ammo",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/HasAmmoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ScavBulletRifle",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "scav_bullet_rifle",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/entity/ScavBulletRifleEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "USECScavRifle",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "usec_scav_rifle",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/client/renderer/USECScavRifleRenderer.java",
+          "src/main/resources/data/tacz_npc/forge/biome_modifier/usec_scav_rifle_biome_modifier.json",
+          "src/main/resources/assets/tacz_npc/models/item/usec_scav_rifle_spawn_egg.json",
+          "src/main/java/com/corrinedev/tacznpc/entity/USECScavRifleEntity.java",
+          "src/main/java/com/corrinedev/tacznpc/entity/model/USECScavRifleModel.java"
+        ]
+      }
+    },
+    {
+      "name": "AmmoTrackerScavRifle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammo_tracker_scav_rifle",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/AmmoTrackerScavRifleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RifleUSECHasAmmo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle_usec_has_ammo",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/RifleUSECHasAmmoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RifleScavOnInitalEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle_scav_on_inital_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/RifleScavOnInitalEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "USECScavEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usec_scav_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/USECScavEntityIsHurtProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "RifleUSECIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle_usec_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/RifleUSECIsHurtProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "USECScavOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usec_scav_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/USECScavOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RifleScavTicking",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle_scav_ticking",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/RifleScavTickingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TerroristScav",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terrorist_scav",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tacz_npc/models/item/terrorist_scav_spawn_egg.json",
+          "src/main/resources/data/tacz_npc/forge/biome_modifier/terrorist_scav_biome_modifier.json",
+          "src/main/java/com/corrinedev/tacznpc/entity/model/TerroristScavModel.java",
+          "src/main/java/com/corrinedev/tacznpc/client/renderer/TerroristScavRenderer.java",
+          "src/main/java/com/corrinedev/tacznpc/entity/TerroristScavEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "TerroristScavRifle",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terrorist_scav_rifle",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/client/renderer/TerroristScavRifleRenderer.java",
+          "src/main/java/com/corrinedev/tacznpc/entity/model/TerroristScavRifleModel.java",
+          "src/main/resources/assets/tacz_npc/models/item/terrorist_scav_rifle_spawn_egg.json",
+          "src/main/java/com/corrinedev/tacznpc/entity/TerroristScavRifleEntity.java",
+          "src/main/resources/data/tacz_npc/forge/biome_modifier/terrorist_scav_rifle_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "TerroristScavSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrorist_scav_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/TerroristScavSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TerroristRifleScavSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrorist_rifle_scav_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/TerroristRifleScavSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TerroristScavHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrorist_scav_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/TerroristScavHurtProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TerroristRifleScavHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrorist_rifle_scav_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/TerroristRifleScavHurtProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TerroristRifleTicking",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrorist_rifle_ticking",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/TerroristRifleTickingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TerroristPistolTicking",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrorist_pistol_ticking",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/TerroristPistolTickingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TerroristScavRifleEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrorist_scav_rifle_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/TerroristScavRifleEntityDiesProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TerroristScavEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrorist_scav_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/TerroristScavEntityDiesProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "USECScavEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usec_scav_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/USECScavEntityDiesProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "USECScavRifleEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usec_scav_rifle_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/USECScavRifleEntityDiesProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BanditHasAmmo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandit_has_ammo",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/BanditHasAmmoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BanditRifleHasAmmo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandit_rifle_has_ammo",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/BanditRifleHasAmmoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BanditAmmoTracker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandit_ammo_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/BanditAmmoTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RifleBanditAmmoTracker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle_bandit_ammo_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/procedures/RifleBanditAmmoTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaczNpcConfig",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tacz_npc_config",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/configuration/TaczNpcConfigConfiguration.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "rifleshoot",
+      "files": [
+        "m4a1_shoot_3p"
+      ],
+      "category": "hostile",
+      "subtitle": "Scav Shoots"
+    },
+    {
+      "name": "pistolshoot",
+      "files": [
+        "glock17_shoot_3p"
+      ],
+      "category": "hostile",
+      "subtitle": "Scav Shoots"
+    },
+    {
+      "name": "scavpistolreload",
+      "files": [
+        "glock17_reload_tactical"
+      ],
+      "category": "hostile",
+      "subtitle": "Scav Reloads"
+    },
+    {
+      "name": "scavriflereload",
+      "files": [
+        "m4a1_reload_tactical"
+      ],
+      "category": "hostile",
+      "subtitle": "Scav Reloads"
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "subtitles.pistolshoot": "Scav Shoots",
+      "subtitles.rifleshoot": "Scav Shoots",
+      "entity.tacz_npc.usec_scav_pistol": "USEC Pistol Scav",
+      "item.tacz_npc.terrorist_scav_spawn_egg": "Terrorist Pistol Scav Spawn Egg",
+      "entity.tacz_npc.terrorist_scav_rifle": "Terrorist Rifle Scav",
+      "entity.tacz_npc.usec_scav_rifle": "USEC Rifle Scav",
+      "item.tacz_npc.usec_scav_pistol_spawn_egg": "USEC Pistol Scav Spawn Egg",
+      "subtitles.scavriflereload": "Scav Reloads",
+      "item.tacz_npc.terrorist_scav_rifle_spawn_egg": "Terrorist Rifle Scav Spawn Egg",
+      "subtitles.scavpistolreload": "Scav Reloads",
+      "entity.tacz_npc.terrorist_scav": "Terrorist Pistol Scav",
+      "item.tacz_npc.usec_scav_rifle_spawn_egg": "USEC Rifle Scav Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "tacz_npc",
+    "modName": "TACZ: NPC",
+    "version": "1.0.0",
+    "author": "corri, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "com.corrinedev.tacznpc"
+  },
+  "mcreatorVersion": 202400232117
+}

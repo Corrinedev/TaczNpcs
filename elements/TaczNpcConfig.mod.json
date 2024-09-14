@@ -1,0 +1,127 @@
+{
+  "_fv": 66,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Pistol Damages",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "How much damage pistol scavs do, this is multiplied by the power",
+            "vardisplay": "Pistol Damage",
+            "varname": "pistoldamage",
+            "enablecomment": true,
+            "stringlist": []
+          }
+        ]
+      },
+      {
+        "category": "Rifle Damages",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.5,
+            "textDefault": "",
+            "comment": "Damage rifle scavs do, multiplied by the power",
+            "vardisplay": "Rifle Damage",
+            "varname": "rifledamage",
+            "enablecomment": true,
+            "stringlist": []
+          }
+        ]
+      },
+      {
+        "category": "Health",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Health of neutral pistol scavs",
+            "vardisplay": "Neutral Pistol Scav Health",
+            "varname": "usecpistolhealth",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Health of neutral rifle scavs",
+            "vardisplay": "Neutral Rifle Scav Health",
+            "varname": "usecriflehealth",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Health of bandit pistol scavs",
+            "vardisplay": "Bandit Pistol Scav Health",
+            "varname": "banditpistolhealth",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Health of bandit rifle scavs",
+            "vardisplay": "Bandit Rifle Scav Health",
+            "varname": "banditriflehealth",
+            "enablecomment": false,
+            "stringlist": []
+          }
+        ]
+      }
+    ],
+    "file": "tacznpcs-config",
+    "configType": 0
+  }
+}
