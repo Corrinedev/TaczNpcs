@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 17,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:glock_17\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 7,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:deagle\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+		        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 7,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:p320\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 16,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:cz75\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

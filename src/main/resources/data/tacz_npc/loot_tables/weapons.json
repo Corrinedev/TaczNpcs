@@ -1,0 +1,218 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 19,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:vector45\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 30,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:m4a1\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 20,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:hk_g3\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 5,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:ai_awp\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 16,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:cz75\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 5,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:m95\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 10,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:sks_tactical\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 20,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:m16a1\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 30,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:ak47\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 30,\n  \"GunFireMode\": \"BURST\",\n  \"GunId\": \"tacz:m16a4\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 20,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:scar_h\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 75,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:m249\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 40,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:rpk\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 2,\n  \"GunFireMode\": \"BURST\",\n  \"GunId\": \"tacz:db_short\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 2,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:db_long\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 8,\n  \"GunFireMode\": \"SEMI\",\n  \"GunId\": \"tacz:aa12\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 30,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:hk_mp5a5\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 25,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:ump45\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\n  \"GunCurrentAmmoCount\": 20,\n  \"GunFireMode\": \"AUTO\",\n  \"GunId\": \"tacz:uzi\",\n  \"HasBulletInBarrel\": \"1b\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
