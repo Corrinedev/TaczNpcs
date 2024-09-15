@@ -662,6 +662,18 @@
           "src/main/java/com/corrinedev/tacznpc/configuration/TaczNpcConfigConfiguration.java"
         ]
       }
+    },
+    {
+      "name": "LootConfig",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_config",
+      "metadata": {
+        "files": [
+          "src/main/java/com/corrinedev/tacznpc/configuration/LootConfigConfiguration.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -705,16 +717,16 @@
     "en_us": {
       "subtitles.pistolshoot": "Scav Shoots",
       "subtitles.rifleshoot": "Scav Shoots",
-      "entity.tacz_npc.usec_scav_pistol": "Pistol PMC",
-      "item.tacz_npc.terrorist_scav_spawn_egg": "Bandit Pistol Spawn Egg",
-      "entity.tacz_npc.terrorist_scav_rifle": "Rifle Bandit",
-      "entity.tacz_npc.usec_scav_rifle": "Rifle PMC",
-      "item.tacz_npc.usec_scav_pistol_spawn_egg": "USEC Pistol Spawn Egg",
+      "entity.tacz_npc.usec_scav_pistol": "USEC Pistol Scav",
+      "item.tacz_npc.terrorist_scav_spawn_egg": "Terrorist Pistol Scav Spawn Egg",
+      "entity.tacz_npc.terrorist_scav_rifle": "Terrorist Rifle Scav",
+      "entity.tacz_npc.usec_scav_rifle": "USEC Rifle Scav",
+      "item.tacz_npc.usec_scav_pistol_spawn_egg": "USEC Pistol Scav Spawn Egg",
       "subtitles.scavriflereload": "Scav Reloads",
-      "item.tacz_npc.terrorist_scav_rifle_spawn_egg": "Bandit Rifle Spawn Egg",
+      "item.tacz_npc.terrorist_scav_rifle_spawn_egg": "Terrorist Rifle Scav Spawn Egg",
       "subtitles.scavpistolreload": "Scav Reloads",
-      "entity.tacz_npc.terrorist_scav": "Pistol Bandit",
-      "item.tacz_npc.usec_scav_rifle_spawn_egg": "USEC Rifle Spawn Egg"
+      "entity.tacz_npc.terrorist_scav": "Terrorist Pistol Scav",
+      "item.tacz_npc.usec_scav_rifle_spawn_egg": "USEC Rifle Scav Spawn Egg"
     }
   },
   "foldersRoot": {

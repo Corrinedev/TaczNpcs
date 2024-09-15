@@ -52,8 +52,6 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 
 import javax.annotation.Nullable;
 
@@ -64,7 +62,6 @@ import com.corrinedev.tacznpc.procedures.RifleUSECHasAmmoProcedure;
 import com.corrinedev.tacznpc.procedures.RifleScavOnInitalEntitySpawnProcedure;
 import com.corrinedev.tacznpc.init.TaczNpcModEntities;
 import net.minecraft.world.entity.PathfinderMob;
-import com.corrinedev.tacznpc.configuration.TaczNpcConfigConfiguration;
 
 public class USECScavRifleEntity extends PathfinderMob implements RangedAttackMob, GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(USECScavRifleEntity.class, EntityDataSerializers.BOOLEAN);
@@ -131,7 +128,7 @@ public class USECScavRifleEntity extends PathfinderMob implements RangedAttackMo
 				return super.canUse() && RifleUSECHasAmmoProcedure.execute(entity);
 			}
 		}.setAlertOthers());
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, TerroristScavEntity.class, true, true) {
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, TerroristScavEntity.class, true, false) {
 			@Override
 			public boolean canUse() {
 				double x = USECScavRifleEntity.this.getX();
@@ -152,7 +149,7 @@ public class USECScavRifleEntity extends PathfinderMob implements RangedAttackMo
 				return super.canContinueToUse() && RifleUSECHasAmmoProcedure.execute(entity);
 			}
 		});
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, TerroristScavRifleEntity.class, true, true) {
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, TerroristScavRifleEntity.class, true, false) {
 			@Override
 			public boolean canUse() {
 				double x = USECScavRifleEntity.this.getX();
@@ -173,7 +170,7 @@ public class USECScavRifleEntity extends PathfinderMob implements RangedAttackMo
 				return super.canContinueToUse() && RifleUSECHasAmmoProcedure.execute(entity);
 			}
 		});
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Monster.class, true, true) {
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Monster.class, false, true) {
 			@Override
 			public boolean canUse() {
 				double x = USECScavRifleEntity.this.getX();
@@ -203,7 +200,7 @@ public class USECScavRifleEntity extends PathfinderMob implements RangedAttackMo
 		this.goalSelector.addGoal(12, new OpenDoorGoal(this, false));
 		this.goalSelector.addGoal(13, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(14, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new USECScavRifleEntity.RangedAttackGoal(this, 1.25, 20, 16f) {
+		this.goalSelector.addGoal(1, new USECScavRifleEntity.RangedAttackGoal(this, 1.25, 10, 16f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -307,7 +304,7 @@ public class USECScavRifleEntity extends PathfinderMob implements RangedAttackMo
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		USECScavRifleEntityDiesProcedure.execute();
+		USECScavRifleEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

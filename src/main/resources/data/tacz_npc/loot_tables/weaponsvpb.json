@@ -1,0 +1,199 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:m4a1"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:star15"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:m16a1"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:hk416"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:scarl"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:g36c"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:aug"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:g41"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ak-47"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ak74"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ak12"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:an94"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:mp5"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:mp7"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ro635"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ump45"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:m950"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:tmp"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:sl8"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:uar10"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:xm3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:c14"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:m590"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:m870"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:m1014"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:citoricxs"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.05
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "bonus_rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              },
+              "add": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ammo556",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ammo762",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ammo762x51",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pointblank:ammo545",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

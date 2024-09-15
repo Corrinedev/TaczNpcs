@@ -1,0 +1,32 @@
+{
+  "_fv": 66,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Loot Table Compatiblity",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "(TACZ by default, true is TACZ false is VPB loot tables)",
+            "vardisplay": "VPB or TACZ?",
+            "varname": "loot",
+            "enablecomment": true,
+            "stringlist": []
+          }
+        ]
+      }
+    ],
+    "file": "tacznpcs-loot-config",
+    "configType": 1
+  }
+}

@@ -45,20 +45,17 @@ import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.util.Mth;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-
 
 import javax.annotation.Nullable;
 
 import java.util.EnumSet;
-
 
 import com.corrinedev.tacznpc.procedures.TerroristScavSpawnProcedure;
 import com.corrinedev.tacznpc.procedures.TerroristScavHurtProcedure;
@@ -67,10 +64,6 @@ import com.corrinedev.tacznpc.procedures.TerroristPistolTickingProcedure;
 import com.corrinedev.tacznpc.procedures.BanditHasAmmoProcedure;
 import com.corrinedev.tacznpc.init.TaczNpcModEntities;
 import net.minecraft.world.entity.PathfinderMob;
-import java.util.Random;
-import com.google.common.primitives.Ints;
-import java.util.random.RandomGenerator;
-import com.corrinedev.tacznpc.configuration.TaczNpcConfigConfiguration;
 
 public class TerroristScavEntity extends PathfinderMob implements RangedAttackMob, GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(TerroristScavEntity.class, EntityDataSerializers.BOOLEAN);
@@ -137,7 +130,7 @@ public class TerroristScavEntity extends PathfinderMob implements RangedAttackMo
 				return super.canUse() && BanditHasAmmoProcedure.execute(entity);
 			}
 		}.setAlertOthers());
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, USECScavRifleEntity.class, true, true) {
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, USECScavRifleEntity.class, true, false) {
 			@Override
 			public boolean canUse() {
 				double x = TerroristScavEntity.this.getX();
@@ -158,7 +151,7 @@ public class TerroristScavEntity extends PathfinderMob implements RangedAttackMo
 				return super.canContinueToUse() && BanditHasAmmoProcedure.execute(entity);
 			}
 		});
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, USECScavEntity.class, true, true) {
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, USECScavEntity.class, true, false) {
 			@Override
 			public boolean canUse() {
 				double x = TerroristScavEntity.this.getX();
@@ -179,7 +172,7 @@ public class TerroristScavEntity extends PathfinderMob implements RangedAttackMo
 				return super.canContinueToUse() && BanditHasAmmoProcedure.execute(entity);
 			}
 		});
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, true, true) {
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, true, false) {
 			@Override
 			public boolean canUse() {
 				double x = TerroristScavEntity.this.getX();
@@ -200,7 +193,7 @@ public class TerroristScavEntity extends PathfinderMob implements RangedAttackMo
 				return super.canContinueToUse() && BanditHasAmmoProcedure.execute(entity);
 			}
 		});
-		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Monster.class, true, true) {
+		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Monster.class, false, true) {
 			@Override
 			public boolean canUse() {
 				double x = TerroristScavEntity.this.getX();
@@ -230,7 +223,7 @@ public class TerroristScavEntity extends PathfinderMob implements RangedAttackMo
 		this.goalSelector.addGoal(13, new OpenDoorGoal(this, false));
 		this.goalSelector.addGoal(14, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(15, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new TerroristScavEntity.RangedAttackGoal(this, 1.25, 15, 16f) {
+		this.goalSelector.addGoal(1, new TerroristScavEntity.RangedAttackGoal(this, 1.25, 10, 16f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -340,7 +333,7 @@ public class TerroristScavEntity extends PathfinderMob implements RangedAttackMo
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		TerroristScavEntityDiesProcedure.execute();
+		TerroristScavEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
